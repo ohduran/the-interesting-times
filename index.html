@@ -1,0 +1,25 @@
+---
+layout: default
+---
+<section class="collumns">
+  {% for article in site.columns %}
+  <div class="collumn">
+    <div class="head">
+      <span class="headline hl3">{{ article.title }}</span>
+      {% if article.author %}
+      <p><span class="headline hl4">by {{ article.author | upcase }}</span></p>
+      {% endif %}
+    </div>
+      {% if article.image %}
+        <figure class="figure">
+  				<img class="media" src="{{ article.image }}" alt="Image of {{ article.title }}">
+          {% if article.image_caption %}
+  				<figcaption class="figcaption">{{ article.image_caption}}</figcaption>
+          {% endif %}
+  			</figure>
+
+      {% endif %}
+        {{ article.content | truncatewords: 50}} - <a href="{{ post.url }}">Read more</a>
+  </div>
+  {% endfor %}
+</section>
