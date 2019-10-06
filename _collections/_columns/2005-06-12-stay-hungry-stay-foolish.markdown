@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Stay Hungry, Stay Foolish"
-author: Steve Jobs
+description: Never be satisfied, and always be willing to do the things people say cannot be done
 date:   2005-06-12 20:20:35 +0200
 image: http://bullandbearmcgill.com/wp-content/uploads/2014/04/img_steve.jpg
 image_caption: Steve Jobs at Stanford during his 2005 Commencement speech

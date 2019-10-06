@@ -8,7 +8,10 @@ layout: default
       <span class="headline hl3">{{ article.title }}</span>
       {% if article.author %}
       <p><span class="headline hl4">by {{ article.author | upcase }}</span></p>
+      {% elsif article.description %}
+      <p><span class="headline hl6">{{ article.description }}</span></p>
       {% endif %}
+
     </div>
       {% if article.image %}
         <figure class="figure">
