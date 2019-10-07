@@ -3,16 +3,18 @@ layout: post
 title:  "Ich bin ein Berliner"
 author: John F. Kennedy
 date:   1940-06-04 20:20:35 +0200
-abstract: I am proud to come to this city as the guest of your distinguished Mayor, who has symbolized throughout the world the fighting spirit of West Berlin. <img class="media" src="https://66.media.tumblr.com/b14a66ee6e7f14573b6a64b6a29351ae/tumblr_moremeFvZ81qjih96o1_400.gif" alt="JFK In Berlin">And I am proud -- And I am proud to visit the Federal Republic with your distinguished Chancellor who for so many years has committed Germany to democracy and freedom and progress, and to come here in the company of my fellow American, General Clay, who -- who has been in this city during its great moments of crisis and will come again if ever needed. Two thousand years ago -- Two thousand years ago, the proudest boast was "civis Romanus sum." Today, in the world of freedom, the proudest boast is "Ich bin ein Berliner." There are many people in the world who really don't understand, or say they don't, what is the great issue between the free world and the Communist world. There are some who say -- There are some who say that communism is the wave of the future.
-
+image: https://66.media.tumblr.com/b14a66ee6e7f14573b6a64b6a29351ae/tumblr_moremeFvZ81qjih96o1_400.gif
+image_caption: There is a widespread belief that Kennedy confused being from Berlin with being a type of German pastry called Berliner. That is Fake News.
 ---
-I am proud to come to this city as the guest of your distinguished Mayor, who has symbolized throughout the world the fighting spirit of West Berlin. <img class="media" src="https://66.media.tumblr.com/b14a66ee6e7f14573b6a64b6a29351ae/tumblr_moremeFvZ81qjih96o1_400.gif" alt="JFK In Berlin">And I am proud -- And I am proud to visit the Federal Republic with your distinguished Chancellor who for so many years has committed Germany to democracy and freedom and progress, and to come here in the company of my fellow American, General Clay, who -- who has been in this city during its great moments of crisis and will come again if ever needed.
+I am proud to come to this city as the guest of your distinguished Mayor, who has symbolized throughout the world the fighting spirit of West Berlin. And I am proud -- And I am proud to visit the Federal Republic with your distinguished Chancellor who for so many years has committed Germany to democracy and freedom and progress, and to come here in the company of my fellow American, General Clay, who -- who has been in this city during its great moments of crisis and will come again if ever needed.
 
 Two thousand years ago -- Two thousand years ago, the proudest boast was "civis Romanus sum." Today, in the world of freedom, the proudest boast is "Ich bin ein Berliner."
 
 There are many people in the world who really don't understand, or say they don't, what is the great issue between the free world and the Communist world.
 
 There are some who say -- There are some who say that communism is the wave of the future. And there are some who say, in Europe and elsewhere, we can work with the Communists. And there are even a few who say that it is true that communism is an evil system, but it permits us to make economic progress.
+
+<!--more-->
 
 Freedom has many difficulties and democracy is not perfect. But we have never had to put a wall up to keep our people in -- to prevent them from leaving us. I want to say on behalf of my countrymen who live many miles away on the other side of the Atlantic, who are far distant from you, that they take the greatest pride, that they have been able to share with you, even from a distance, the story of the last 18 years. I know of no town, no city, that has been besieged for 18 years that still lives with the vitality and the force, and the hope, and the determination of the city of West Berlin.
 

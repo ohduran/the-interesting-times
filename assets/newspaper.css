@@ -1,283 +1,146 @@
-body{
-    font-family: 'Droid Serif', serif;
-    font-size: 14px;
-    color: #2f2f2f;
-    background-color: #f9f7f1;
+/* BASIC SET-UP and STYLES */
+* {
+  box-sizing: border-box;
 }
-header{
-    font-weight: 900;
-    font-size: 80px;
-    text-transform: uppercase;
-    display: inline-block;
-    line-height: 72px;
-    margin-bottom: 20px;
-
+body {
+  font-family: 'Georgia', serif;
+  margin: 0;
 }
-p{
-    margin-top: 0;
-    margin-bottom: 20px;
+#masthead h1 {
+  text-align: center;
+  margin:.25em;
+  font-family: 'UnifrakturMaguntia', cursive;
+  font-size:80px
 }
-.head{
-    text-align: center;
-    position: relative;
-
-
+#masthead p {
+  text-align: center;
+  margin-bottom: 2em;
+  background: black;
+  color: white;
+  padding: .25em 0;
 }
-
-.headerobjectswrapper{
-  font-family: 'Libre Baskerville', 'Droid Serif', serif;
-  margin-top: 20px;
+p {
+  text-align: justify;
+  margin:.25em 0 .5em 0;
+  line-height:1.35em;
 }
-
-.subhead{
-    border-bottom: 2px solid #2f2f2f;
-    border-top: 2px solid #2f2f2f;
-    padding: 12px 0 12px 0;
-
+h3 {
+  margin: 0;
+  padding: 0 0 .25em;
+  font-size:1.5em;
 }
-.weatherforcastbox{
-    position: relative;
-    width: 12%;
-    left: 10px;
-    border: 3px double #2f2f2f;
-    padding: 10px 15px 10px 15px;
-    line-height: 20px;
-    display: inline-block;
-    margin: 0 50px 20px -360px;
+article {
+  margin-bottom: 1.5em;
 }
-.content{
-    font-size: 0;
-    line-height: 0;
-    word-spacing: -.31em;
-    display: inline-block;
-    margin: 30px 2% 0 2%;
-
-
+blockquote {
+  padding: 1em 0;
+  margin:1em 0;
+/*   background: #eee; */
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  font-family: sans-serif;
 }
-.columns{
-
+q {
+  font-size: 22px;
+  font-style: italic;
+  display: block;
+  margin:1em 0;
 }
-
-.column{
-    font-size: 14px;
-    line-height: 20px;
-    width: 17.5%;
-    display: inline-block;
-    padding: 0 1% 0 1%;
-    vertical-align: top;
-    margin-bottom: 50px;
-    transition: all .7s;
-    overflow:hidden;
-    text-overflow:ellipsis;
+footer {
+  display:flex;
+  flex-direction: column;
+  vertical-align: middle;
+  align-items: center;
+  padding:0;
+  width: 100%;
+  height: auto;
+  padding: 1em 0 0;
 }
-
-.column {
-  border-right: 1px solid #2f2f2f;
+footer h4 {
+  font-weight:normal;
+  display: flex-item;
+  width: auto;
+  text-align:center;
+  padding: 1em 0;
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
 }
-.column .headline{
-    text-align: center;
-    line-height: normal;
-    font-family: 'Playfair Display', serif;
-    display: block;
-    margin: 0 auto;
-
-
+.item a {
+  white-space: nowrap;
 }
-.column .headline.hl1{
-    font-weight: 700;
-    font-size: 30px;
-    text-transform: uppercase;
-    padding: 10px 0 10px 0;
-
+.item a:hover {
+  background: tomato;
+  color: white;
 }
+/*
+ *
+ * THE REAL MAGIC BEGINS BELOW...
+ *
+ * */
 
-.column .headline.hl2{
-    font-weight: 400;
-    font-style: italic;
-    font-size: 24px;
-    box-sizing: border-box;
-    padding: 10px 0 10px 0;
+/* MASONRY COLUMN MAGIC */
+.masonry { /* Masonry container */
+  width:99%;
+  -webkit-column-count: 4;
+  -moz-column-count:4;
+  column-count: 4;
+  padding: 0;
+  font-size: .85em;
+  margin-left:-1px;
+  margin-bottom: 15px;
 }
-
-.column .headline.hl2:before{
-    border-top: 1px solid #2f2f2f;
-    content: '';
-    width: 100px;
-    height: 7px;
-    display: block;
-    margin: 0 auto;
+.item {
+/*     display: inline-block; */
+  display: block;
+  background: #fff;
+  padding: 0 1em;
+  width: 104%;
+  -webkit-transition:1s ease all;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  border-left: 1px solid black;
+/*   if using inline-block, doesn't requre min-height or height but columns don't stretch as well vertically */
+  min-height: 100%;
+  height:100%;
 }
-.column .headline.hl2:after{
-    border-bottom: 1px solid #2f2f2f;
-    content: '';
-    width: 100px;
-    height: 13px;
-    display: block;
-    margin: 0 auto;
-
+/* END OF MASONRY COLUMN MAGIC */
+.item img, .video{
+  max-width:100%;
+  margin-bottom: .75em;
 }
 
-.column .headline.hl3{
-    font-weight: 400;
-    font-style: italic;
-    font-size: 36px;
-    box-sizing: border-box;
-    padding: 10px 0 10px 0;
-}
-.column .headline.hl4{
-    font-weight: 700;
-    font-size: 12px;
-    box-sizing: border-box;
-    padding: 10px 0 10px 0;
-}
-.column .headline.hl4:before{
-    border-top: 1px solid #2f2f2f;
-    content: '';
-    width: 100px;
-    height: 7px;
-    display: block;
-    margin: 0 auto;
-}
-.column .headline.hl4:after{
-    border-bottom: 1px solid #2f2f2f;
-    content: '';
-    width: 100px;
-    height: 10px;
-    display: block;
-    margin: 0 auto;
-
-}
-
-.column .headline.hl5{
-    font-weight: 400;
-    font-size: 42px;
-    text-transform: uppercase;
-    font-style: italic;
-    box-sizing: border-box;
-    padding: 10px 0 10px 0;
-}
-.column .headline.hl6{
-    font-weight: 400;
-    font-size: 18px;
-    box-sizing: border-box;
-    padding: 10px 0 10px 0;
-}
-.column .headline.hl6:before{
-    border-top: 1px solid #2f2f2f;
-    content: '';
-    width: 100px;
-    height: 7px;
-    display: block;
-    margin: 0 auto;
-}
-.column .headline.hl6:after{
-    border-bottom: 1px solid #2f2f2f;
-    content: '';
-    width: 100px;
-    height: 10px;
-    display: block;
-    margin: 0 auto;
-
-}
-.column .headline.hl7{
-    font-weight: 700;
-    font-size: 12px;
-    box-sizing: border-box;
-    display: block;
-    padding: 10px 0 10px 0;
-}
-.column .headline.hl8{
-    font-weight: 700;
-    font-size: 12px;
-    box-sizing: border-box;
-    padding: 10px 0 10px 0;
-}
-.column .headline.hl9{
-    font-weight: 700;
-    font-size: 12px;
-    box-sizing: border-box;
-    padding: 10px 0 10px 0;
-}
-.column .headline.hl10{
-    font-weight: 700;
-    font-size: 12px;
-    box-sizing: border-box;
-    padding: 10px 0 10px 0;
-}
-.column .citation{
-    font-family: 'Playfair Display', serif;
-    font-size: 36px;
-    line-height: 44px;
-    /*font-style: italic;*/
-    text-align: center;
-    font-weight: 400;
-    display: block;
-    margin: 40px 0 40px 0;
-    font-feature-settings: "liga", "dlig";
-
-}
-.column .citation:before{
-    border-top: 1px solid #2f2f2f;
-    content: '';
-    width: 100px;
-    height: 16px;
-    display: block;
-    margin: 0 auto;
-}
-.column .citation:after{
-    border-bottom: 1px solid #2f2f2f;
-    content: '';
-    width: 100px;
-    height: 16px;
-    display: block;
-    margin: 0 auto;
-}
-.column .figure {
-	  margin: 0 0 20px;
-}
-.column .figcaption{
-	font-style: italic;
-	font-size: 12px;
-}
-.media {
+.bw {
     -webkit-filter: sepia(80%) contrast(1) opacity(0.8);
     filter: sepia(80%) grayscale(1) contrast(1) opacity(0.8);
-    mix-blend-mode: multiply;
-    width: 100%;
 }
-/*________________________________________________________________________________________________________________________________*/
-/*MEDIAQUERIES*/
-@media only all and (max-width: 1300px) {
-    .weatherforcastbox{
-        display: none;
-    }
 
+@media only screen and (max-width: 320px) {
+    .masonry {
+        -moz-column-count: 1;
+        -webkit-column-count: 1;
+        column-count: 1;
+    }
 }
-@media only all and (max-width: 1200px) {
-    .column{
-        width: 31%;
-    }
 
+@media only screen and (min-width: 321px) and (max-width: 768px){
+    .masonry {
+        -moz-column-count: 2;
+        -webkit-column-count: 2;
+        column-count: 2;
+    }
 }
-    @media only all and (max-width: 900px) {
-    .column{
-        width: 47%;
+@media only screen and (min-width: 769px) and (max-width: 1200px){
+    .masonry {
+        -moz-column-count: 3;
+        -webkit-column-count: 3;
+        column-count: 3;
     }
-
 }
-@media only all and (max-width: 600px) {
-    .column{
-        width: 100%;
+@media only screen and (min-width: 1201px) {
+    .masonry {
+        -moz-column-count: 4;
+        -webkit-column-count: 4;
+        column-count: 4;
     }
-	.column + .column {
-				border-left: none;
-      	border-bottom: 1px solid #2f2f2f;
-	}
-    header{
-        max-width: 320px;
-        font-size: 60px;
-        line-height: 54px;
-        overflow: hidden;
-    }
-
 }

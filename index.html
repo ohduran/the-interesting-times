@@ -1,30 +1,21 @@
 ---
 layout: default
 ---
-<section class="columns">
-  {% for article in site.columns %}
-  <div class="column">
-    <div class="head">
-      <span class="headline hl3">{{ article.title }}</span>
-      {% if article.author %}
-      <p><span class="headline hl4">by {{ article.author | upcase }}</span></p>
-      {% elsif article.description %}
-      <p><span class="headline hl6">{{ article.description }}</span></p>
+<section class="masonry">
+  {% for item in site.columns %}
+  <div class="item">
+    <article>
+      <h3>{{ item.title }}</h3>
+      <img {% if item.image_bw %}class="bw"{% endif %} src="{{ item.image }}">
+      {% if item.image_caption %}
+        <blockquote>{{ item.image_caption }}</blockquote>
       {% endif %}
-
+      {{ item.excerpt }} <a href="{{ item.url }}">Continue reading</a>.
+    </article>
     </div>
-      {% if article.image %}
-        <figure class="figure">
-  				<img class="media" src="{{ article.image }}" alt="Image of {{ article.title }}">
-          {% if article.image_caption %}
-  				<figcaption class="figcaption">{{ article.image_caption}}</figcaption>
-          {% endif %}
-  			</figure>
-
-      {% endif %}
-        {{ article.abstract}} - <a href="{{ post.url }}">Read more</a>
-  </div>
   {% endfor %}
 </section>
 
-<script src="/assets/newspaper.js"></script>
+<footer>
+  <h4>© {{ site.time | date: '%Y'}} Because who doesn't want a footer on their website?</h4>
+</footer>
