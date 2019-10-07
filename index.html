@@ -1,9 +1,9 @@
 ---
 layout: default
 ---
-<section class="collumns">
+<section class="columns">
   {% for article in site.columns %}
-  <div class="collumn">
+  <div class="column">
     <div class="head">
       <span class="headline hl3">{{ article.title }}</span>
       {% if article.author %}
@@ -22,7 +22,9 @@ layout: default
   			</figure>
 
       {% endif %}
-        {{ article.content | truncatewords: 50}} - <a href="{{ post.url }}">Read more</a>
+        {{ article.abstract}} - <a href="{{ post.url }}">Read more</a>
   </div>
   {% endfor %}
 </section>
+
+<script src="/assets/newspaper.js"></script>

@@ -54,11 +54,11 @@ p{
 
 
 }
-.collumns{
+.columns{
 
 }
 
-.collumn{
+.column{
     font-size: 14px;
     line-height: 20px;
     width: 17.5%;
@@ -70,10 +70,11 @@ p{
     overflow:hidden;
     text-overflow:ellipsis;
 }
-.collumn + .collumn {
-  border-left: 1px solid #2f2f2f;
+
+.column {
+  border-right: 1px solid #2f2f2f;
 }
-.collumn .headline{
+.column .headline{
     text-align: center;
     line-height: normal;
     font-family: 'Playfair Display', serif;
@@ -82,7 +83,7 @@ p{
 
 
 }
-.collumn .headline.hl1{
+.column .headline.hl1{
     font-weight: 700;
     font-size: 30px;
     text-transform: uppercase;
@@ -90,7 +91,7 @@ p{
 
 }
 
-.collumn .headline.hl2{
+.column .headline.hl2{
     font-weight: 400;
     font-style: italic;
     font-size: 24px;
@@ -98,7 +99,7 @@ p{
     padding: 10px 0 10px 0;
 }
 
-.collumn .headline.hl2:before{
+.column .headline.hl2:before{
     border-top: 1px solid #2f2f2f;
     content: '';
     width: 100px;
@@ -106,7 +107,7 @@ p{
     display: block;
     margin: 0 auto;
 }
-.collumn .headline.hl2:after{
+.column .headline.hl2:after{
     border-bottom: 1px solid #2f2f2f;
     content: '';
     width: 100px;
@@ -116,20 +117,20 @@ p{
 
 }
 
-.collumn .headline.hl3{
+.column .headline.hl3{
     font-weight: 400;
     font-style: italic;
     font-size: 36px;
     box-sizing: border-box;
     padding: 10px 0 10px 0;
 }
-.collumn .headline.hl4{
+.column .headline.hl4{
     font-weight: 700;
     font-size: 12px;
     box-sizing: border-box;
     padding: 10px 0 10px 0;
 }
-.collumn .headline.hl4:before{
+.column .headline.hl4:before{
     border-top: 1px solid #2f2f2f;
     content: '';
     width: 100px;
@@ -137,7 +138,7 @@ p{
     display: block;
     margin: 0 auto;
 }
-.collumn .headline.hl4:after{
+.column .headline.hl4:after{
     border-bottom: 1px solid #2f2f2f;
     content: '';
     width: 100px;
@@ -147,7 +148,7 @@ p{
 
 }
 
-.collumn .headline.hl5{
+.column .headline.hl5{
     font-weight: 400;
     font-size: 42px;
     text-transform: uppercase;
@@ -155,13 +156,13 @@ p{
     box-sizing: border-box;
     padding: 10px 0 10px 0;
 }
-.collumn .headline.hl6{
+.column .headline.hl6{
     font-weight: 400;
     font-size: 18px;
     box-sizing: border-box;
     padding: 10px 0 10px 0;
 }
-.collumn .headline.hl6:before{
+.column .headline.hl6:before{
     border-top: 1px solid #2f2f2f;
     content: '';
     width: 100px;
@@ -169,7 +170,7 @@ p{
     display: block;
     margin: 0 auto;
 }
-.collumn .headline.hl6:after{
+.column .headline.hl6:after{
     border-bottom: 1px solid #2f2f2f;
     content: '';
     width: 100px;
@@ -178,32 +179,32 @@ p{
     margin: 0 auto;
 
 }
-.collumn .headline.hl7{
+.column .headline.hl7{
     font-weight: 700;
     font-size: 12px;
     box-sizing: border-box;
     display: block;
     padding: 10px 0 10px 0;
 }
-.collumn .headline.hl8{
+.column .headline.hl8{
     font-weight: 700;
     font-size: 12px;
     box-sizing: border-box;
     padding: 10px 0 10px 0;
 }
-.collumn .headline.hl9{
+.column .headline.hl9{
     font-weight: 700;
     font-size: 12px;
     box-sizing: border-box;
     padding: 10px 0 10px 0;
 }
-.collumn .headline.hl10{
+.column .headline.hl10{
     font-weight: 700;
     font-size: 12px;
     box-sizing: border-box;
     padding: 10px 0 10px 0;
 }
-.collumn .citation{
+.column .citation{
     font-family: 'Playfair Display', serif;
     font-size: 36px;
     line-height: 44px;
@@ -215,7 +216,7 @@ p{
     font-feature-settings: "liga", "dlig";
 
 }
-.collumn .citation:before{
+.column .citation:before{
     border-top: 1px solid #2f2f2f;
     content: '';
     width: 100px;
@@ -223,7 +224,7 @@ p{
     display: block;
     margin: 0 auto;
 }
-.collumn .citation:after{
+.column .citation:after{
     border-bottom: 1px solid #2f2f2f;
     content: '';
     width: 100px;
@@ -231,10 +232,10 @@ p{
     display: block;
     margin: 0 auto;
 }
-.collumn .figure {
+.column .figure {
 	  margin: 0 0 20px;
 }
-.collumn .figcaption{
+.column .figcaption{
 	font-style: italic;
 	font-size: 12px;
 }
@@ -253,22 +254,22 @@ p{
 
 }
 @media only all and (max-width: 1200px) {
-    .collumn{
+    .column{
         width: 31%;
     }
 
 }
     @media only all and (max-width: 900px) {
-    .collumn{
+    .column{
         width: 47%;
     }
 
 }
 @media only all and (max-width: 600px) {
-    .collumn{
+    .column{
         width: 100%;
     }
-	.collumn + .collumn {
+	.column + .column {
 				border-left: none;
       	border-bottom: 1px solid #2f2f2f;
 	}
