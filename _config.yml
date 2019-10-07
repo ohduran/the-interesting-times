@@ -45,3 +45,10 @@ collections_dir: _collections
 collections:
   columns:
     output: true
+
+
+# Social media
+twitter: oh_duran
+github: ohduran
+linkedin: alvaroduranbarata
+facebook:
