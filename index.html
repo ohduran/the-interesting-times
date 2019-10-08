@@ -3,8 +3,21 @@ layout: default
 ---
 <section class="hero">
   <div class="sideHeroColumn">
-    <h2>Column 1</h2>
-    <p>Some text..</p>
+    {% for item in site.heros %}
+      {% if item.position == 'left' %}
+        <div class="excitement">
+          <article>
+            <h2>{{ item.title }}</h2>
+            <img {% if item.image_bw %}class="bw"{% endif %} src="{{ item.image }}">
+            {% if item.image_caption %}
+              <blockquote>{{ item.image_caption }}</blockquote>
+            {% endif %}
+            {{ item.excerpt }} <a href="{{ item.url }}">Continue reading</a>.
+          </article>
+        </div>
+        {% break %}
+      {% endif %}
+    {% endfor %}
   </div>
   <div class="heroColumn">
     {% for item in site.heros %}
@@ -17,12 +30,26 @@ layout: default
           {% endif %}
           {{ item.excerpt }} <a href="{{ item.url }}">Continue reading</a>.
         </article>
+        {% break %}
       {% endif %}
     {% endfor %}
   </div>
   <div class="sideHeroColumn">
-    <h2>Column 3</h2>
-    <p>Some text..</p>
+    {% for item in site.heros %}
+      {% if item.position == 'right' %}
+        <div class="excitement">
+          <article>
+            <h2>{{ item.title }}</h2>
+            <img {% if item.image_bw %}class="bw"{% endif %} src="{{ item.image }}">
+            {% if item.image_caption %}
+              <blockquote>{{ item.image_caption }}</blockquote>
+            {% endif %}
+            {{ item.excerpt }} <a href="{{ item.url }}">Continue reading</a>.
+          </article>
+        </div>
+        {% break %}
+      {% endif %}
+    {% endfor %}
   </div>
 </section>
 <section class="masonry">

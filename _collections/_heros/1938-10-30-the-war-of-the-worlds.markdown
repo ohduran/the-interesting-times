@@ -5,13 +5,16 @@ author: H. G. Wells
 date:   1938-10-30 20:20:35 +0200
 image: http://cdn8.openculture.com/wp-content/uploads/2007/07/welleswar.jpg
 image_bw: True
+image_caption: The episode became famous for allegedly causing panic among its listening audience, though the scale of that panic is disputed, as the program had relatively few listeners.
 position: center
+
 ---
 We know now that in the early years of the twentieth century this world was being watched closely by intelligences greater than man's and yet as mortal as his own. We know now that as human beings busied themselves about their various concerns they were scrutinized and studied, perhaps almost as narrowly as a man with a microscope might scrutinize the transient creatures that swarm and multiply in a drop of water.
 
-<!--more-->
+With infinite complacence people went to and fro over the earth about their little affairs, serene in the assurance of their dominion over this small spinning fragment of solar driftwood which by chance or design man has inherited out of the dark mystery of Time and Space.
 
-With infinite complacence people went to and fro over the earth about their little affairs, serene in the assurance of their dominion over this small spinning fragment of solar driftwood which by chance or design man has inherited out of the dark mystery of Time and Space. Yet across an immense ethereal gulf, minds that to our minds as ours are to the beasts in the jungle, intellects vast, cool and unsympathetic, regarded this earth with envious eyes and slowly and surely drew their plans against us. In the thirty-ninth year of the twentieth century came the great disillusionment.
+<!--more-->
+Yet across an immense ethereal gulf, minds that to our minds as ours are to the beasts in the jungle, intellects vast, cool and unsympathetic, regarded this earth with envious eyes and slowly and surely drew their plans against us. In the thirty-ninth year of the twentieth century came the great disillusionment.
 
 It was near the end of October. Business was better. The war scare was over. More men were back at work. Sales were picking up. On this particular evening, October 30, the Crosley service estimated that thirty-two million people were listening in on radios.
 
