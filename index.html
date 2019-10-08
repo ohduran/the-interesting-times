@@ -1,6 +1,30 @@
 ---
 layout: default
 ---
+<section class="hero">
+  <div class="sideHeroColumn">
+    <h2>Column 1</h2>
+    <p>Some text..</p>
+  </div>
+  <div class="heroColumn">
+    {% for item in site.heros %}
+      {% if item.position == 'center' %}
+        <article>
+          <h2>{{ item.title }}</h2>
+          <img {% if item.image_bw %}class="bw"{% endif %} src="{{ item.image }}">
+          {% if item.image_caption %}
+            <blockquote>{{ item.image_caption }}</blockquote>
+          {% endif %}
+          {{ item.excerpt }} <a href="{{ item.url }}">Continue reading</a>.
+        </article>
+      {% endif %}
+    {% endfor %}
+  </div>
+  <div class="sideHeroColumn">
+    <h2>Column 3</h2>
+    <p>Some text..</p>
+  </div>
+</section>
 <section class="masonry">
   {% for item in site.columns %}
   <div class="item">

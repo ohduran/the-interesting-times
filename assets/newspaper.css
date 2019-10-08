@@ -1,4 +1,21 @@
 /* BASIC SET-UP and STYLES */
+.sideHeroColumn {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+.heroColumn {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+.heroColumn img {
+  width: 50%;
+  height: auto;
+  margin-bottom: .75em;
+  display: block;
+  margin: auto;
+}
 * {
   box-sizing: border-box;
 }

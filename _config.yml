@@ -45,6 +45,8 @@ collections_dir: _collections
 collections:
   columns:
     output: true
+  heros:
+    output: true
 
 
 # Social media
