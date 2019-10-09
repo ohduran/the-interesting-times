@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "I have a dream"
+title:  "I have a Dream"
 author: Dr. Martin Luther King
 date:   1968-08-23 20:20:35 +0200
 image: https://images.rapgenius.com/8633974824618ef8adcd402394048e4c.1000x758x1.jpg
