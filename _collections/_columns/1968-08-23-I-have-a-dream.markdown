@@ -3,7 +3,7 @@ layout: post
 title:  "I have a Dream"
 author: Dr. Martin Luther King
 date:   1968-08-23 20:20:35 +0200
-image: https://images.rapgenius.com/8633974824618ef8adcd402394048e4c.1000x758x1.jpg
+image: https://media.giphy.com/media/xTcnTkVDUvIYV1X4wo/giphy.gif
 image_caption: In his iconic speech at the Lincoln Memorial, King synthesized portions of his earlier speeches to capture both the necessity for change and the potential for hope in American society.
 ---
 I am happy to join with you today in what will go down in history as the greatest demonstration for freedom in the history of our nation. Five score years ago, a great American, in whose symbolic shadow we stand today, signed the Emancipation Proclamation. This momentous decree came as a great beacon light of hope to millions of Negro slaves who had been seared in the flames of withering injustice. It came as a joyous daybreak to end the long night of their captivity.

@@ -4,10 +4,8 @@ title:  "The War of the Worlds"
 author: H. G. Wells
 date:   1938-10-30 20:20:35 +0200
 image: http://cdn8.openculture.com/wp-content/uploads/2007/07/welleswar.jpg
-image_bw: True
 image_caption: The episode became famous for allegedly causing panic among its listening audience, though the scale of that panic is disputed, as the program had relatively few listeners.
 position: center
-
 ---
 We know now that in the early years of the twentieth century this world was being watched closely by intelligences greater than man's and yet as mortal as his own. We know now that as human beings busied themselves about their various concerns they were scrutinized and studied, perhaps almost as narrowly as a man with a microscope might scrutinize the transient creatures that swarm and multiply in a drop of water.
 

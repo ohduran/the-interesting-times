@@ -2,9 +2,8 @@
 layout: post
 title:  "Farewell to the Old Guard"
 author: Napoleon
-date:   1938-10-30 20:20:35 +0200
+date:   1814-04-20 20:20:35 +0200
 image: https://www.historyhit.com/wp-content/uploads/2016/11/napoleon2.jpg
-image_bw: True
 position: left
 image_caption: The Emperor of France and would-be ruler of Europe said goodbye to the Old Guard after his failed invasion of Russia and defeat by the Allies.
 ---

@@ -3,8 +3,7 @@ layout: post
 title:  Yes We Can
 author: Barack Obama
 date:   2008-11-05 20:20:35 +0200
-image: https://i.ytimg.com/vi/h_kT0gAaKXk/maxresdefault.jpg
-image_bw: False
+image: https://www.thenation.com/wp-content/uploads/2016/12/obama_2008_election_rtr_img.jpg?scale=896&compress=80
 position: right
 image_caption: President-elect Barack Obama spoke to the world from his home city of Chicago as he became the first black president of the United States.
 ---

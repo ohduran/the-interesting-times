@@ -1,8 +1,9 @@
 <article>
   <h3><a href="{{ include.item.url }}">{{ include.item.title }}</a></h3>
-  <img {% if item.image_bw %}class="bw"{% endif %} src="{{ include.item.image }}">
+  <img class="bw" src="{{ include.item.image }}">
   {% if item.image_caption %}
     <blockquote>{{ include.item.image_caption }}</blockquote>
   {% endif %}
+  <h6 style="margin: 0px;">{{ include.item.date | date:"%d/%m/%y"}}</h6>
   {{ include.item.excerpt }}
 </article>

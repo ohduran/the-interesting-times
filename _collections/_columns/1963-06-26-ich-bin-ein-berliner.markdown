@@ -2,7 +2,7 @@
 layout: post
 title:  "Ich bin ein Berliner"
 author: John F. Kennedy
-date:   1940-06-04 20:20:35 +0200
+date:   1963-06-26 20:20:35 +0200
 image: https://66.media.tumblr.com/b14a66ee6e7f14573b6a64b6a29351ae/tumblr_moremeFvZ81qjih96o1_400.gif
 image_caption: There is a widespread belief that Kennedy confused being from Berlin with being a type of German pastry called Berliner. That is Fake News.
 ---
