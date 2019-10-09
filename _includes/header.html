@@ -1,19 +1,13 @@
 <div class="head">
   {% if page.title %}
+  <div id="masthead">
+    <h3><a href="/">{{ site.title }}</a></h3>
+  </div>
 
   {% else %}
   <div id="masthead">
     <h1>{{ site.title }}</h1>
     <h6 style="text-align:center">{{ site.description }}</h6>
-    <nav>
-      <ul>
-        <li><a class="active" href="#home">Home</a></li>
-        <li><a href="#news">News</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="#about">About</a></li>
-      </ul>
-    </nav>
-
   </div>
   {% endif %}
 </div>

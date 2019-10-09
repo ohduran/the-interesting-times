@@ -12,7 +12,7 @@ layout: default
             {% if item.image_caption %}
               <blockquote>{{ item.image_caption }}</blockquote>
             {% endif %}
-            {{ item.excerpt }} <a href="{{ item.url }}">Continue reading</a>.
+            {{ item.excerpt }}
           </article>
         </div>
         {% break %}
@@ -28,7 +28,7 @@ layout: default
           {% if item.image_caption %}
             <blockquote>{{ item.image_caption }}</blockquote>
           {% endif %}
-          {{ item.excerpt }} <a href="{{ item.url }}">Continue reading</a>.
+          {{ item.excerpt }}
         </article>
         {% break %}
       {% endif %}
@@ -44,7 +44,7 @@ layout: default
             {% if item.image_caption %}
               <blockquote>{{ item.image_caption }}</blockquote>
             {% endif %}
-            {{ item.excerpt }} <a href="{{ item.url }}">Continue reading</a>.
+            {{ item.excerpt }}
           </article>
         </div>
         {% break %}
@@ -56,12 +56,12 @@ layout: default
   {% for item in site.columns %}
   <div class="item">
     <article>
-      <h3>{{ item.title }}</h3>
+      <h3><a href="{{ item.url }}">{{ item.title }}</a></h3>
       <img {% if item.image_bw %}class="bw"{% endif %} src="{{ item.image }}">
       {% if item.image_caption %}
         <blockquote>{{ item.image_caption }}</blockquote>
       {% endif %}
-      {{ item.excerpt }} <a href="{{ item.url }}">Continue reading</a>.
+      {{ item.excerpt }}
     </article>
     </div>
   {% endfor %}

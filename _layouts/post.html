@@ -1,0 +1,19 @@
+---
+layout: default
+---
+<article>
+
+			<header>
+				<h1>{{ page.title }}</h1>
+        <br>
+        <div class="item">
+          <img {% if item.image_bw %}class="bw"{% endif %} src="{{ page.image }}">
+        </div>
+        <br>
+				<h4>{{ page.description }}</h4>
+        <br>
+			</header>
+
+      {{ content }}
+
+		</article>
