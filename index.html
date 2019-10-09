@@ -1,68 +1,46 @@
 ---
 layout: default
 ---
+
+<!-- HERO SECTION -->
 <section class="hero">
+  <!-- LEFT HERO -->
   <div class="sideHeroColumn">
     {% for item in site.heros %}
       {% if item.position == 'left' %}
-        <div class="excitement">
-          <article>
-            <h2>{{ item.title }}</h2>
-            <img {% if item.image_bw %}class="bw"{% endif %} src="{{ item.image }}">
-            {% if item.image_caption %}
-              <blockquote>{{ item.image_caption }}</blockquote>
-            {% endif %}
-            {{ item.excerpt }}
-          </article>
-        </div>
+        {% include article.html item=item %}
         {% break %}
       {% endif %}
     {% endfor %}
   </div>
+
+  <!-- HERO -->
   <div class="heroColumn">
     {% for item in site.heros %}
       {% if item.position == 'center' %}
-        <article>
-          <h2>{{ item.title }}</h2>
-          <img {% if item.image_bw %}class="bw"{% endif %} src="{{ item.image }}">
-          {% if item.image_caption %}
-            <blockquote>{{ item.image_caption }}</blockquote>
-          {% endif %}
-          {{ item.excerpt }}
-        </article>
+        {% include article.html item=item %}
         {% break %}
       {% endif %}
     {% endfor %}
   </div>
+
+  <!-- RIGHT HERO -->
   <div class="sideHeroColumn">
     {% for item in site.heros %}
       {% if item.position == 'right' %}
-        <div class="excitement">
-          <article>
-            <h2>{{ item.title }}</h2>
-            <img {% if item.image_bw %}class="bw"{% endif %} src="{{ item.image }}">
-            {% if item.image_caption %}
-              <blockquote>{{ item.image_caption }}</blockquote>
-            {% endif %}
-            {{ item.excerpt }}
-          </article>
-        </div>
+        {% include article.html item=item %}
         {% break %}
       {% endif %}
     {% endfor %}
   </div>
+
 </section>
+
+<!-- MASONRY SECTION -->
 <section class="masonry">
   {% for item in site.columns %}
-  <div class="item">
-    <article>
-      <h3><a href="{{ item.url }}">{{ item.title }}</a></h3>
-      <img {% if item.image_bw %}class="bw"{% endif %} src="{{ item.image }}">
-      {% if item.image_caption %}
-        <blockquote>{{ item.image_caption }}</blockquote>
-      {% endif %}
-      {{ item.excerpt }}
-    </article>
+    <div class="item">
+      {% include article.html item=item %}
     </div>
   {% endfor %}
 </section>
