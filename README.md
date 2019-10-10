@@ -7,7 +7,7 @@
 
 ### Copyright
 
-Copyright (C) 2019 Sal, https://www.wowthemes.net
+Copyright (C) 2019 Alvaro Duran, https://www.alvaroduran.com
 
 **The Interesting Times theme for Jekyll** is designed and developed by [Alvaro](https://alvaroduran.com) and it is *free* under MIT license.
 
